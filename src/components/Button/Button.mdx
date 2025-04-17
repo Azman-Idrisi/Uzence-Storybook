@@ -1,0 +1,18 @@
+import { Meta, Primary, Controls, Story } from '@storybook/blocks';
+import * as ButtonStories from './Button.stories';
+import { Button } from './Button';
+
+<Meta of={ButtonStories} />
+
+# Button Component
+
+A versatile button component with various styles and sizes.
+
+## Usage
+
+```tsx
+import { Button } from 'components';
+
+const MyComponent = () => {
+  return <Button variant="primary">Click Me</Button>;
+};
