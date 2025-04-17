@@ -110,9 +110,6 @@ Our design system includes:
   - Desktop: 1024px
   - Wide: 1280px
 
-## Contributing
-
-We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting pull requests.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -165,10 +162,6 @@ Our components follow WCAG 2.1 guidelines with:
 - Safari (latest)
 - Edge (latest)
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgments
 
 - [React](https://reactjs.org/)
@@ -181,5 +174,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any questions or support, please reach out to:
-- Email: [your-email@example.com]
+- Email: [idrisiazman@gmail.com]
 - GitHub: [@Azman-Idrisi](https://github.com/Azman-Idrisi)
