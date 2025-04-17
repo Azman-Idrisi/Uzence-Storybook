@@ -5,25 +5,15 @@
       "src": "package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "build"
-      }
-    },
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "storybook-static"
+        "distDir": "storybook-static",
+        "buildCommand": "npm run build-storybook"
       }
     }
   ],
   "rewrites": [
     {
-      "source": "/storybook/:path*",
-      "destination": "/storybook/:path*"
-    },
-    {
       "source": "/(.*)",
-      "destination": "/$1"
+      "destination": "/index.html"
     }
   ],
   "headers": [
@@ -36,7 +26,7 @@
         },
         {
           "key": "X-Frame-Options",
-          "value": "DENY"
+          "value": "SAMEORIGIN"
         },
         {
           "key": "X-Content-Type-Options",
