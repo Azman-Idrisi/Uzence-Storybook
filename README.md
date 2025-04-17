@@ -110,9 +110,6 @@ Our design system includes:
   - Desktop: 1024px
   - Wide: 1280px
 
-## Contributing
-
-We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting pull requests.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -164,10 +161,6 @@ Our components follow WCAG 2.1 guidelines with:
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
