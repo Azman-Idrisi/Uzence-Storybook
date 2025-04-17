@@ -57,7 +57,7 @@ export const Tooltip = React.forwardRef<HTMLDivElement, TooltipProps>(
   ({ content, children, variant, placement, className, delay = 0, disabled = false, ...props }, ref) => {
     const [isVisible, setIsVisible] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
-    const timeoutRef = useRef<ReturnType<typeof setTimeout>>(null);
+    const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
     const tooltipRef = useRef<HTMLDivElement>(null);
 
     const showTooltip = () => {

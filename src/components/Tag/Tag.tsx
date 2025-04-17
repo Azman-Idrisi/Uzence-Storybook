@@ -64,7 +64,7 @@ const Tag = React.forwardRef<HTMLSpanElement, TagProps>(
       <span
         ref={ref}
         className={tagVariants({ variant, size, disabled, className })}
-        role="status"
+        role="button"
         aria-disabled={disabled || undefined}
         {...props}
       >
