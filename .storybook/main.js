@@ -1,3 +1,4 @@
+/** @type { import('@storybook/react-webpack5').StorybookConfig } */
 const config = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
@@ -5,19 +6,23 @@ const config = {
     '@storybook/addon-essentials',
     '@storybook/preset-create-react-app',
     '@storybook/addon-onboarding',
-    '@storybook/addon-interactions',
+    '@storybook/addon-interactions'
   ],
   framework: {
     name: '@storybook/react-webpack5',
-    options: {},
+    options: {}
   },
   docs: {
-    autodocs: 'tag',
+    autodocs: 'tag'
   },
   staticDirs: ['../public'],
   core: {
-    builder: '@storybook/builder-webpack5',
+    builder: '@storybook/builder-webpack5'
   },
+  typescript: {
+    check: false,
+    reactDocgen: 'react-docgen-typescript'
+  }
 };
 
 export default config; 
