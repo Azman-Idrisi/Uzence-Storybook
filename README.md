@@ -181,5 +181,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For any questions or support, please reach out to:
-- Email: [your-email@example.com]
+- Email: [idrisiazman@gmail.com]
 - GitHub: [@Azman-Idrisi](https://github.com/Azman-Idrisi)
