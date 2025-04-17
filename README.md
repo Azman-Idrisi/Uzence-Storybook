@@ -54,7 +54,7 @@ function App() {
 
 ## Component Documentation
 
-Explore our components in [Storybook](https://uzence-storybook.vercel.app/).
+Explore our components in [Storybook](https://uzence-storybook-93cl5zcd9-mohammad-azmans-projects.vercel.app/?path=/docs/components-button--docs).
 
 ### Available Components
 
