@@ -6,14 +6,15 @@ A modern, accessible, and customizable design system built with React, TypeScrip
 
 ## Features
 
-- 🎨 **Comprehensive Component Library**
-- 🎯 **TypeScript Support**
-- 🎭 **Dark/Light Theme Support**
-- ♿ **Accessibility First**
-- 📱 **Responsive Design**
-- 🧪 **Test Coverage**
-- 📚 **Storybook Documentation**
-- 🎨 **Tailwind CSS Integration**
+- 🎨 **Comprehensive Component Library** - Modern, responsive components with animations
+- 🎯 **TypeScript Support** - Full type safety and autocompletion
+- 🎭 **Dark/Light Theme Support** - Seamless theme switching with context
+- ♿ **Accessibility First** - WCAG 2.1 compliant components
+- 📱 **Responsive Design** - Mobile-first approach
+- 🧪 **Test Coverage** - Comprehensive testing suite
+- 📚 **Storybook Documentation** - Interactive component playground
+- 🎨 **Tailwind CSS Integration** - Utility-first styling
+- ⚡ **Framer Motion** - Smooth animations and transitions
 
 ## Installation
 
@@ -33,11 +34,18 @@ npm start
 ### Basic Setup
 
 ```tsx
-import { Button, ThemeProvider } from '@uzence/design-system';
+import { ThemeProvider, Breadcrumbs, Button } from '@uzence/design-system';
 
 function App() {
+  const breadcrumbItems = [
+    { id: 'home', label: 'Home', href: '/' },
+    { id: 'products', label: 'Products', href: '/products' },
+    { id: 'details', label: 'Product Details', href: '/products/details' }
+  ];
+
   return (
     <ThemeProvider>
+      <Breadcrumbs items={breadcrumbItems} />
       <Button variant="primary">Click me</Button>
     </ThemeProvider>
   );
@@ -54,10 +62,20 @@ function App() {
 
 ## Component Documentation
 
-Explore our components in [Storybook](https://uzence-storybook.vercel.app/).
+Explore our components in [Storybook](https://uzence-storybook-93cl5zcd9-mohammad-azmans-projects.vercel.app/?path=/docs/components-button--docs).
 
 ### Available Components
 
+#### Navigation
+- **Breadcrumbs** - Modern navigation trail with:
+  - Icon support
+  - Custom separators
+  - Path truncation
+  - Hover animations
+  - Dark mode support
+  - Full keyboard navigation
+
+#### Core Components
 - Button
 - Input
 - Card
@@ -70,12 +88,27 @@ Explore our components in [Storybook](https://uzence-storybook.vercel.app/).
 
 Our design system includes:
 
-- **Colors**: Primary, secondary, accent, and semantic colors
-- **Typography**: Font families, sizes, and weights
-- **Spacing**: Consistent spacing scale
-- **Shadows**: Elevation system
-- **Border Radius**: Standardized corner radiuses
-- **Breakpoints**: Responsive design breakpoints
+- **Colors**
+  - Brand colors (primary, secondary)
+  - Semantic colors (success, warning, error)
+  - Dark/light mode variants
+- **Typography**
+  - Font families: Modern sans-serif stack
+  - Type scale: 12px to 48px
+  - Font weights: 400 (regular), 500 (medium), 600 (semibold)
+- **Spacing**
+  - 4px base unit
+  - Consistent spacing scale (4px to 64px)
+- **Shadows**
+  - Elevation levels (sm, md, lg, xl)
+  - Dark mode optimized
+- **Border Radius**
+  - Consistent rounded corners (sm: 4px, md: 6px, lg: 8px)
+- **Breakpoints**
+  - Mobile: 640px
+  - Tablet: 768px
+  - Desktop: 1024px
+  - Wide: 1280px
 
 ## Contributing
 
@@ -109,20 +142,21 @@ npm test
 
 ## Testing
 
-We use Jest and React Testing Library for our test suite. Run the following command to execute tests:
-
-```bash
-npm test
-```
+We use Jest and React Testing Library for our test suite. Each component includes:
+- Unit tests
+- Integration tests
+- Accessibility tests
+- Snapshot tests
 
 ## Accessibility
 
-Our components are built with accessibility in mind, following WCAG 2.1 guidelines. Each component includes:
-
+Our components follow WCAG 2.1 guidelines with:
+- Semantic HTML
 - ARIA attributes
 - Keyboard navigation
 - Focus management
 - Screen reader support
+- Color contrast compliance
 
 ## Browser Support
 
@@ -141,6 +175,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Storybook](https://storybook.js.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Heroicons](https://heroicons.com/)
 
 ## Contact
 

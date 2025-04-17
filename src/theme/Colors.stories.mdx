@@ -1,0 +1,176 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+import { baseColors, lightTheme, darkTheme } from './colors';
+
+<Meta title="Theme/Colors" />
+
+# Color System
+
+Our color system is designed for B2B enterprise applications with accessibility and consistency in mind. All colors meet WCAG 2.1 contrast requirements and support both light and dark themes.
+
+## Base Color Palette
+
+### Primary Colors
+<ColorPalette>
+  <ColorItem 
+    title="Blue" 
+    subtitle="Primary Brand Color" 
+    colors={baseColors.blue} 
+  />
+  <ColorItem 
+    title="Purple" 
+    subtitle="Secondary Brand Color" 
+    colors={baseColors.purple} 
+  />
+  <ColorItem 
+    title="Teal" 
+    subtitle="Tertiary Brand Color" 
+    colors={baseColors.teal} 
+  />
+</ColorPalette>
+
+### Neutral Colors
+<ColorPalette>
+  <ColorItem 
+    title="Gray" 
+    subtitle="Used for text, backgrounds, and borders" 
+    colors={baseColors.gray} 
+  />
+</ColorPalette>
+
+### Semantic Colors
+<ColorPalette>
+  <ColorItem 
+    title="Success" 
+    subtitle="Positive actions and states" 
+    colors={baseColors.success} 
+  />
+  <ColorItem 
+    title="Warning" 
+    subtitle="Cautionary actions and states" 
+    colors={baseColors.warning} 
+  />
+  <ColorItem 
+    title="Error" 
+    subtitle="Destructive actions and error states" 
+    colors={baseColors.error} 
+  />
+  <ColorItem 
+    title="Info" 
+    subtitle="Informational messages and states" 
+    colors={baseColors.info} 
+  />
+</ColorPalette>
+
+## Theme Tokens
+
+### Light Theme
+
+#### Surface & Background
+<ColorPalette>
+  <ColorItem 
+    title="Surface" 
+    subtitle="Component backgrounds" 
+    colors={lightTheme.surface} 
+  />
+  <ColorItem 
+    title="Background" 
+    subtitle="Page and container backgrounds" 
+    colors={lightTheme.background} 
+  />
+</ColorPalette>
+
+#### Text Colors
+<ColorPalette>
+  <ColorItem 
+    title="Text" 
+    subtitle="Typography hierarchy" 
+    colors={lightTheme.text} 
+  />
+</ColorPalette>
+
+### Dark Theme
+
+#### Surface & Background
+<ColorPalette>
+  <ColorItem 
+    title="Surface" 
+    subtitle="Component backgrounds (Dark)" 
+    colors={darkTheme.surface} 
+  />
+  <ColorItem 
+    title="Background" 
+    subtitle="Page and container backgrounds (Dark)" 
+    colors={darkTheme.background} 
+  />
+</ColorPalette>
+
+#### Text Colors
+<ColorPalette>
+  <ColorItem 
+    title="Text" 
+    subtitle="Typography hierarchy (Dark)" 
+    colors={darkTheme.text} 
+  />
+</ColorPalette>
+
+## Usage Guidelines
+
+### Accessibility
+
+- All color combinations meet WCAG 2.1 AA standards for contrast
+- Text colors are carefully chosen for readability
+- Interactive elements have distinct hover and focus states
+- Semantic colors are used consistently for user feedback
+
+### Best Practices
+
+1. Use semantic colors for their intended purpose:
+   - Success: Positive actions, completion states
+   - Warning: Cautionary actions, important notices
+   - Error: Critical issues, destructive actions
+   - Info: Neutral information, help text
+
+2. Maintain consistent use of surface layers:
+   - Primary: Main component backgrounds
+   - Secondary: Nested components, cards
+   - Tertiary: Elevated components, modals
+
+3. Text hierarchy:
+   - Primary: Main content, headings
+   - Secondary: Supporting text
+   - Tertiary: Meta information
+   - Disabled: Inactive elements
+
+4. Brand colors:
+   - Use primary brand color for main CTAs
+   - Secondary brand color for complementary actions
+   - Tertiary brand color for accents and illustrations
+
+### CSS Variables
+
+All colors are available as CSS variables:
+
+```css
+/* Surface & Background */
+var(--surface-primary)
+var(--surface-secondary)
+var(--surface-tertiary)
+
+/* Text Colors */
+var(--text-primary)
+var(--text-secondary)
+var(--text-tertiary)
+var(--text-disabled)
+
+/* Brand Colors */
+var(--brand-primary)
+var(--brand-primary-hover)
+var(--brand-primary-active)
+var(--brand-primary-subtle)
+
+/* Semantic Colors */
+var(--semantic-success)
+var(--semantic-warning)
+var(--semantic-error)
+var(--semantic-info)
+``` 
